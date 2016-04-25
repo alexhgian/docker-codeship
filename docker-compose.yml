@@ -1,14 +1,16 @@
-app:
-  build: .
-  ports:
-    - "8080:8080"
-  volumes:
-    - .:/usr/src/app
-  depends_on:
-   - mongo
-mongo:
-  image: mongo
-  volumes:
-    - /data/db
-  ports:
-    - "27017:27017"
+version: '2'
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/usr/src/app
+    depends_on:
+     - mongo
+  mongo:
+    image: mongo
+    volumes:
+      - /data/db
+    ports:
+      - "27017:27017"
