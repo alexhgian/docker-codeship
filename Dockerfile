@@ -1,6 +1,5 @@
 FROM node:4-onbuild
 
-
 #RUN mkdir /db
 
 # Create app directory
