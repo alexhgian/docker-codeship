@@ -1,4 +1,4 @@
-- name: dev_test
-  tag: ^(dev)
+- name: first_step
+  tag: ^(dev|master)
   service: app
   command: echo foo
