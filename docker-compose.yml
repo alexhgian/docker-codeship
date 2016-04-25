@@ -1,5 +1,6 @@
 version: '2'
 services:
+  cached: true
   app:
     build: .
     ports:
@@ -9,6 +10,7 @@ services:
     depends_on:
      - mongo
   mongo:
+    cached: true
     image: mongo
     volumes:
       - /data/db
