@@ -1,0 +1,4 @@
+- name: dev_test
+  tag: ^(dev)
+  service: app
+  command: echo foo
